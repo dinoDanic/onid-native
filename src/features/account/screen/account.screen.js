@@ -1,10 +1,13 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Pressable } from "react-native";
+import { auth } from "../../../firebase/firebase.utils";
 
 const AccountScreen = () => {
   return (
-    <View>
-      <Text>account screen</Text>
+    <View style={{ marginTop: 50 }}>
+      <Pressable onPress={() => auth.signOut()}>
+        <Text>logout</Text>
+      </Pressable>
     </View>
   );
 };

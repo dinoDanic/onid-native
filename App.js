@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 import Navigation from "./src/structure/navigation";
 import { Provider } from "react-redux";
 import store from "./src/redux/store";
@@ -13,6 +14,7 @@ export default function App() {
   if (!ubuntuLoaded) {
     return null;
   }
+
   return (
     <Provider store={store}>
       <ThemeProvider theme={theme}>
