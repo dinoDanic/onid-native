@@ -28,4 +28,4 @@ Started working on Native version
 - Fullscreen mode
 
 Login page
-![alt text](https://github.com/dinoDanic/onid/blob/main/src/img/loginPage.png?raw=true)
+![alt text](https://github.com/dinoDanic/onid-native/blob/master/src/img/screen1.jpg?raw=true)
