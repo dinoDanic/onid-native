@@ -7,13 +7,13 @@ import Spacer from "../../../components/ui/spacer/spacer.component";
 import Title from "../../../components/ui/title/title.component";
 import { ButtonUi } from "../../../components/ui/button/button-ui.component";
 
-const Login = ({ setLoginShow }) => {
+const Register = ({ setRegisterShow }) => {
   return (
     <Container>
       <Spacer position="top" size="xl" />
       <Middle>
         <Box>
-          <Title>Login</Title>
+          <Title>Register</Title>
           <Spacer position="top" size="medium" />
           <Input placeholder="email" />
           <Spacer position="bottom" size="medium" />
@@ -27,7 +27,11 @@ const Login = ({ setLoginShow }) => {
             </ButtonUi>
           </Buttons>
         </Box>
-        <ButtonUi mode="text" color="black" onPress={() => setLoginShow(false)}>
+        <ButtonUi
+          mode="text"
+          color="black"
+          onPress={() => setRegisterShow(false)}
+        >
           close
         </ButtonUi>
       </Middle>
@@ -49,4 +53,4 @@ const Buttons = styled.View`
   margin-top: ${(props) => props.theme.space[3]};
 `;
 
-export default Login;
+export default Register;

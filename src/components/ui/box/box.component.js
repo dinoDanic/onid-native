@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components/native";
 
-const Box = ({ children }) => {
-  return <Container>{children}</Container>;
+const Box = ({ children, ...otherPorps }) => {
+  return <Container {...otherPorps}>{children}</Container>;
 };
 
 const Container = styled.View`
